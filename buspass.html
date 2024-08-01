@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buspass</title>
+</head>
+
+<body>
+    <form action="./response.html">
+        <fieldset>
+            <legend>Applicant Details</legend>
+            <dl><label for="username">Name</label>
+                <input type="text" name="username" id="username" required placeholder="username"
+                    pattern="[a-zA-Z]{8,20}" title="multiple chars a-z,A-Z min chars8 and max chars 20">
+                <label for="fname">Fathername/gurdian</label>
+                <input type="text" name="fname" id="fname" rtequired placeholder="fathername" pattern="[a-z]{8,20}"
+                    title="multiple chars minlength 8 and maxlength 20">
+            </dl>
+            <dl><label for="dob">DOB</label>
+                <input type="date" name="dob" id="dob" required>
+                <label for="gender">Gender</label>
+                <input type="radio" name="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label>
+            </dl>
+            <dl><label for="adharno">Adhar no</label>
+                <input type="number" name="adharno" id="adharno" required pattern="\d{12,12}"
+                    title="minimum and maximum numbers are 12">
+                <label for="mobileno">Mobile No</label>
+                <input type="number" name="number" id="mobileno" required maxlength="10">
+            </dl>
+            <dl>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required spaceholder="email" pattern="[a-zA-Z\d\s@!#&*]+>
+                <label for=" photo">Photo</label>
+                <input type="file" name="file" id="photo" accept=".pdf,.docx">
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Residential Address Details</legend>
+            <dl>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" rows="10" cols="10"></textarea>
+                <label for="district">District</label>
+                <input type="text" name="district" id="district" required pattern="[a-z]+" title="multiple chars">
+            </dl>
+            <dl> <label for="mandel">Madel</label>
+                <input type="text" name="mandel" id="mandel" required>
+                <label for="village">Village</label>
+                <input type="text" name="village" id="village" requred>
+            </dl>
+            <label for="pincode">Pincode</label>
+            <input type="text" name="pincode" id="pincode">
+
+        </fieldset>
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <dl>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required>
+                <label for="labeltype">Label Type</label>
+                <input type="text" name="labeltype" id="labeltype">
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            <dl>
+                <label for="pm">Payment Mode </label>
+                <input type="text" name="pm" id="pm" place holder>
+            </dl>
+            <dl><label for="pdm">Pass Delivery Mode </label>
+                <input type="text" name="pdm" id="pdm" place holder>
+            </dl>
+            <dl><label for="center">Center at which<br>
+                    you want to Collect Pass</label>
+                <input type="text" name="center" id="center">
+            </dl>
+        </fieldset>
+    </form>
+</body>
+
+</html>
