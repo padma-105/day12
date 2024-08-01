@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+
+<body>
+
+    <form action="./response.html" method="post" enctype="multipart/form-data">
+
+        <input type="Mail" name="mail" placeholder="email" required autofocus="off" pattern="[a-z]"><br>
+        <input type="image" src="./smily.jpeg" alt="" width="100"><br>
+        <input type="file" name="file" accept=".pdf" multiple><br>
+        <textarea name="address" rows="10" cols="10"></textarea><br>
+        <input type="text" name="firstname" placeholde="firstname" autofocus="off" pattern="[a-z]+"><br>
+        <h1>Number Validation</h1>
+        <input type="text" name="phnumber" placeholder="phone number" required pattern="\+91[6-9]+[\d]{9}"><br>
+        <h1>Mail Validation</h1>
+        <input type="text" name="mail" placeholder="email" required pattern="[a-zA-Z_*#@/d]+@[a-z]+\.[a-z]{2,}"
+            title="follow given format"><br>
+            <h1>pasword validation</h1>
+        <input type="text" name="password" placeholder="password" required
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#_])[a-zA-Z0-9*#@]{8,}"><br>
+
+        <input type="text" name="date" placeholder="date" required pattern="[\d]{4}-[\d]{2}-[\d]{2}"><br>
+
+        <input type="submit">
+    </form>
+   
+    
+    
+
+</form>
+  
+</body>
+
+</html>
